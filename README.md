@@ -63,6 +63,18 @@ This will:
    plus the cross-validated F1 (mean ± std) for the tuned model.
 6. Save the best model and scaler to `models/`.
 
+## Week 4: Report Visualizations
+
+`src/make_report_visuals.py` regenerates the five charts used in
+`Week4_Data_Science_Report_and_Insights_Presentation_Plan.docx`
+(churn by contract type, churn by tenure, feature importance, ROC curve,
+confusion matrix) from the trained model, saving them to `report_assets/`:
+
+```bash
+python main.py                       # generate data + train + save model
+python -m src.make_report_visuals    # generate report_assets/*.png
+```
+
 ## Notes
 
 - The dataset is synthetically generated (`sklearn.datasets.make_classification`
